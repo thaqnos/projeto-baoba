@@ -1,0 +1,31 @@
+.navbar {
+    background-color: $cor-primaria;
+    @include display-flex(space-between, center);
+    color: white;
+    height: 100px;
+    
+    .navbar__logo {
+        font-family: $font-titulo;
+        font-weight: bolder;
+        color: $cor-secundaria;
+        font-size: 3rem;
+    }
+    
+    .navbar__links {
+        @include display-flex(space-between, center);
+        font-family: $font-titulo;
+        font-size: 1.3rem;
+        list-style: none;
+        text-transform: lowercase;
+
+        .navbar__links-item {
+            margin-right: 15px;
+            border-right: solid 1px rgba(255, 255, 255, 0.247);
+            padding-right: 20px;
+        }
+    }
+
+    .navbar__botao {
+        @include btn-amarelo
+    }
+}

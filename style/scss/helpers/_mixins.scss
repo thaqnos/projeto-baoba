@@ -1,0 +1,15 @@
+@mixin display-flex($justify-content, $align-items) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin btn-amarelo {
+    background-color: $cor-secundaria;
+    border: none;
+    font-family: $font-titulo;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: lowercase;
+    font-weight: bolder;
+}
