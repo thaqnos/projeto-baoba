@@ -13,7 +13,7 @@
         list-style: none;
         font-family: $font-titulo;
         font-weight: bold;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         text-transform: lowercase;
         color: white;
         margin: 0;
@@ -21,6 +21,8 @@
 
         .navbar__links-item:not(.exclui) {
             margin-left: 40px;
+            border-left: 1px solid grey;
+            padding-left: 30px;
         }
     }
 
@@ -34,6 +36,10 @@
 .navbar__links-item:hover {
     color: $cor-secundaria;
     cursor: pointer;
+}
+
+.navbar__btn-call-to-action:hover {
+    background-color:  rgb(190, 112, 3);
 }
 
 @media (max-width: 768px)

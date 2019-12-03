@@ -27,13 +27,15 @@ body {
     list-style: none;
     font-family: "Abhaya Libre", serif;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     text-transform: lowercase;
     color: white;
     margin: 0;
     padding: 0; }
     .navbar__home .navbar__links .navbar__links-item:not(.exclui) {
-      margin-left: 40px; }
+      margin-left: 40px;
+      border-left: 1px solid grey;
+      padding-left: 30px; }
   .navbar__home .navbar__btn-call-to-action {
     border: none;
     font-family: "Abhaya Libre", serif;
@@ -50,6 +52,9 @@ body {
   color: #F59614;
   cursor: pointer; }
 
+.navbar__btn-call-to-action:hover {
+  background-color: #be7003; }
+
 @media (max-width: 768px) {
   .navbar__home {
     flex-direction: column;
@@ -60,5 +65,39 @@ body {
       margin-top: -25px;
       font-weight: 1rem;
       padding: 10px 15px; } }
+.header__home {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: row-reverse;
+  min-width: 100vw;
+  min-height: 80vh;
+  background-image: url("../../../assets/imagens/header-imagem.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1400px 980px; }
+  .header__home .header__container {
+    width: 40vw; }
+    .header__home .header__container .header__titulo {
+      font-family: "Abhaya Libre", serif;
+      font-size: 4rem;
+      font-weight: bold;
+      background-color: white;
+      text-align: end;
+      margin-right: 30px;
+      padding: 20px;
+      line-break: loose; }
+
+@media (max-width: 768px) {
+  .header__home .header__container {
+    width: 70vw; }
+    .header__home .header__container .header__titulo {
+      line-break: normal; } }
+@media (max-width: 320px) {
+  .header__home .header__container {
+    width: 30vw; }
+    .header__home .header__container .header__titulo {
+      line-break: normal;
+      font-size: 2rem; } }
 
 /*# sourceMappingURL=style.css.map */
