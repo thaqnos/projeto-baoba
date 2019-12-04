@@ -59,3 +59,36 @@
         }
     }
 }
+
+@media (max-width: 320px)
+{
+    .navbar__home {
+        padding: 8px;
+        min-width: 100vw;
+        text-align: center;
+        display: block;
+        height: 300px;
+
+        .navbar__titulo {
+            margin-bottom: 0px;
+        }
+
+        .navbar__links {
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+            
+            .navbar__links-item:not(.exclui) {
+                margin-left: 0px;
+                margin-top: 10px;
+                padding-left: 0px;    
+                border-left: none;
+            }
+        }
+
+        .navbar__btn-call-to-action {
+            margin-top: 20px;
+        }
+
+    }
+}
