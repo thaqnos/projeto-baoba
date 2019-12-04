@@ -29,7 +29,7 @@
 
     .navbar__btn-call-to-action {
         @include btn-call-to-action;
-        margin: 0;
+        margin: 0 30px 0 0; 
     }
 }
 
@@ -88,7 +88,7 @@
         }
 
         .navbar__btn-call-to-action {
-            margin-top: 20px;
+            margin: 20px 0 0 0;
         }
 
     }

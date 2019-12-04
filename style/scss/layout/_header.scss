@@ -10,16 +10,23 @@
 
     .header__container {
         width: 40vw;
+        text-align: end;
 
         .header__titulo {
+            margin: 0 60px 0 0;
             font-family: $font-titulo;
             font-size: 4rem;
             font-weight: bold;
             background-color: white;
             text-align: end;
-            margin-right: 30px;
             padding: 20px;
             line-break: loose;
+        }
+
+        .header__btn-call-to-action {
+            margin-right: 60px;
+            margin-top: 40px;
+            @include btn-call-to-action;
         }
     }
 }
@@ -29,13 +36,19 @@
     .header__home {
         flex-direction: initial;
         @include display-flex(center, center);
+        min-height: 100vh;
 
         .header__container {
             width: 50vw;
+            text-align: center;
             
             .header__titulo {
                 font-size: 2.3rem;
                 text-align: center;
+            }
+
+            .header__btn-call-to-action {
+                margin-top: 20px;
             }
         }
     }
@@ -50,6 +63,10 @@
                 line-break: normal;
                 font-size: 2rem;
                 margin: 0;
+            }
+
+            .header__btn-call-to-action {
+                margin: 20px 0 0 0;
             }
         }
     }

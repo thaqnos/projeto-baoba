@@ -1,75 +1,79 @@
 .saiba-mais__home {
-    @include display-flex(center, center);
     align-self: flex-start;
+    @include display-flex(center, center);
 
     .saiba-mais__imagem-botao {
         margin-left: 50px;
         margin-top: -50px;
 
         .saiba-mais__imagem {
-            width: 400px;
             height: 500px;
             object-fit: cover;
             object-position: center;
+            width: 490px;
+            margin-bottom: -5px;
         }
 
         .saiba-mais__div-botao {
-            width: 400px;
             background-color: $cor-primaria;
-            @include display-flex(space-between, center);
+            width: 490px;
             height: 70px;
+            @include display-flex(space-between, center);
             
             .saiba-mais__botao-texto {
-                font-family: $font-titulo;
                 color: $cor-secundaria;
+                font-family: $font-titulo;
                 font-weight: bold;
-                font-size: 1.3rem;
-                text-transform: lowercase;
+                font-size: 1.5rem;
                 margin: 0 0 0 25px;
                 padding: 0;
+                text-transform: lowercase;
             }
             
             .saiba-mais__botao {
-                cursor: pointer;
                 background-color: $cor-secundaria;
-                width: 60px;
-                height: 70px;
+                cursor: pointer;
+                height: 69px;
                 @include display-flex(center, center);
+                width: 90px;
 
                 .saiba-mais__botao-seta {
-                    width: 30px;
                     transform: rotate(180deg);
+                    width: 30px;
                 }
             }
         }
     }
 
     .saiba-mais__icones {
-        min-width: 60vw;
-        @include display-flex(center, center);
         flex-wrap: wrap;
+        @include display-flex(center, center);
         margin-right: 50px;
+        min-width: 60vw;
 
         .saiba-mais__icones-div {
-            width: 25vw;
             margin: 30px;
             @include display-flex(center, center);
+            width: 25vw;
 
             .saiba-mais__icones-imagem {
-                width: 90px;
                 opacity: 0.3;
                 margin-right: 20px;
+                width: 90px;
             }
 
             .saiba-mais__icones-titulo {
                 font-family: $font-titulo;
                 font-weight: bold;
+                font-size: 1.6rem;
+                margin: 0;
                 color: rgb(165, 165, 165);
                 cursor: pointer;
             }
 
             .saiba-mais__icones-texto {
                 color: rgb(165, 165, 165);
+                margin-top: 10px;
             }
         }
 
@@ -99,8 +103,8 @@
             min-width: 90vw;
 
             .saiba-mais__icones-div {
-                width: 50vw;
                 margin: 20px 0;
+                width: 50vw;
             }
         }
     }
@@ -111,24 +115,24 @@
     .saiba-mais__home {
         .saiba-mais__imagem-botao {  
             .saiba-mais__imagem {
-                width: 90vw;
                 height: 100vh;
                 margin-top: 30px;
+                width: 90vw;
             }
             
             .saiba-mais__div-botao {
                 width: 90vw;
 
                 .saiba-mais__botao-texto {
-                    margin: 0 10px 0 10px;
                     line-break: loose;
+                    margin: 0 10px 0 10px;
                 }          
             }
         }
 
         .saiba-mais__icones {
-            width: 70%;
             margin: 0;
+            width: 70%;
         }
     }
 }

@@ -48,7 +48,7 @@ body {
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    margin: 0; }
+    margin: 0 30px 0 0; }
 
 .navbar__links-item:hover {
   color: #F59614;
@@ -86,7 +86,7 @@ body {
         padding-left: 0px;
         border-left: none; }
     .navbar__home .navbar__btn-call-to-action {
-      margin-top: 20px; } }
+      margin: 20px 0 0 0; } }
 .header__home {
   display: flex;
   justify-content: end;
@@ -99,98 +99,121 @@ body {
   background-repeat: no-repeat;
   background-size: 1400px 980px; }
   .header__home .header__container {
-    width: 40vw; }
+    width: 40vw;
+    text-align: end; }
     .header__home .header__container .header__titulo {
+      margin: 0 60px 0 0;
       font-family: "Abhaya Libre", serif;
       font-size: 4rem;
       font-weight: bold;
       background-color: white;
       text-align: end;
-      margin-right: 30px;
       padding: 20px;
       line-break: loose; }
+    .header__home .header__container .header__btn-call-to-action {
+      margin-right: 60px;
+      margin-top: 40px;
+      border: none;
+      font-family: "Abhaya Libre", serif;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-transform: lowercase;
+      background-color: #F59614;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer; }
 
 @media (max-width: 768px) {
   .header__home {
     flex-direction: initial;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    min-height: 100vh; }
     .header__home .header__container {
-      width: 50vw; }
+      width: 50vw;
+      text-align: center; }
       .header__home .header__container .header__titulo {
         font-size: 2.3rem;
-        text-align: center; } }
+        text-align: center; }
+      .header__home .header__container .header__btn-call-to-action {
+        margin-top: 20px; } }
 @media (max-width: 320px) {
   .header__home .header__container {
     width: 90vw; }
     .header__home .header__container .header__titulo {
       line-break: normal;
       font-size: 2rem;
-      margin: 0; } }
+      margin: 0; }
+    .header__home .header__container .header__btn-call-to-action {
+      margin: 20px 0 0 0; } }
 .saiba-mais__home {
+  align-self: flex-start;
   display: flex;
   justify-content: center;
-  align-items: center;
-  align-self: flex-start; }
+  align-items: center; }
   .saiba-mais__home .saiba-mais__imagem-botao {
     margin-left: 50px;
     margin-top: -50px; }
     .saiba-mais__home .saiba-mais__imagem-botao .saiba-mais__imagem {
-      width: 400px;
       height: 500px;
       object-fit: cover;
-      object-position: center; }
+      object-position: center;
+      width: 490px;
+      margin-bottom: -5px; }
     .saiba-mais__home .saiba-mais__imagem-botao .saiba-mais__div-botao {
-      width: 400px;
       background-color: #222222;
+      width: 490px;
+      height: 70px;
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      height: 70px; }
+      align-items: center; }
       .saiba-mais__home .saiba-mais__imagem-botao .saiba-mais__div-botao .saiba-mais__botao-texto {
-        font-family: "Abhaya Libre", serif;
         color: #F59614;
+        font-family: "Abhaya Libre", serif;
         font-weight: bold;
-        font-size: 1.3rem;
-        text-transform: lowercase;
+        font-size: 1.5rem;
         margin: 0 0 0 25px;
-        padding: 0; }
+        padding: 0;
+        text-transform: lowercase; }
       .saiba-mais__home .saiba-mais__imagem-botao .saiba-mais__div-botao .saiba-mais__botao {
-        cursor: pointer;
         background-color: #F59614;
-        width: 60px;
-        height: 70px;
+        cursor: pointer;
+        height: 69px;
         display: flex;
         justify-content: center;
-        align-items: center; }
+        align-items: center;
+        width: 90px; }
         .saiba-mais__home .saiba-mais__imagem-botao .saiba-mais__div-botao .saiba-mais__botao .saiba-mais__botao-seta {
-          width: 30px;
-          transform: rotate(180deg); }
+          transform: rotate(180deg);
+          width: 30px; }
   .saiba-mais__home .saiba-mais__icones {
-    min-width: 60vw;
+    flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    margin-right: 50px; }
+    margin-right: 50px;
+    min-width: 60vw; }
     .saiba-mais__home .saiba-mais__icones .saiba-mais__icones-div {
-      width: 25vw;
       margin: 30px;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      width: 25vw; }
       .saiba-mais__home .saiba-mais__icones .saiba-mais__icones-div .saiba-mais__icones-imagem {
-        width: 90px;
         opacity: 0.3;
-        margin-right: 20px; }
+        margin-right: 20px;
+        width: 90px; }
       .saiba-mais__home .saiba-mais__icones .saiba-mais__icones-div .saiba-mais__icones-titulo {
         font-family: "Abhaya Libre", serif;
         font-weight: bold;
+        font-size: 1.6rem;
+        margin: 0;
         color: #a5a5a5;
         cursor: pointer; }
       .saiba-mais__home .saiba-mais__icones .saiba-mais__icones-div .saiba-mais__icones-texto {
-        color: #a5a5a5; }
+        color: #a5a5a5;
+        margin-top: 10px; }
     .saiba-mais__home .saiba-mais__icones .saiba-mais__icones-titulo:hover {
       color: black; }
 
@@ -205,20 +228,20 @@ body {
       flex-direction: column;
       min-width: 90vw; }
       .saiba-mais__home .saiba-mais__icones .saiba-mais__icones-div {
-        width: 50vw;
-        margin: 20px 0; } }
+        margin: 20px 0;
+        width: 50vw; } }
 @media (max-width: 320px) {
   .saiba-mais__home .saiba-mais__imagem-botao .saiba-mais__imagem {
-    width: 90vw;
     height: 100vh;
-    margin-top: 30px; }
+    margin-top: 30px;
+    width: 90vw; }
   .saiba-mais__home .saiba-mais__imagem-botao .saiba-mais__div-botao {
     width: 90vw; }
     .saiba-mais__home .saiba-mais__imagem-botao .saiba-mais__div-botao .saiba-mais__botao-texto {
-      margin: 0 10px 0 10px;
-      line-break: loose; }
+      line-break: loose;
+      margin: 0 10px 0 10px; }
   .saiba-mais__home .saiba-mais__icones {
-    width: 70%;
-    margin: 0; } }
+    margin: 0;
+    width: 70%; } }
 
 /*# sourceMappingURL=style.css.map */
