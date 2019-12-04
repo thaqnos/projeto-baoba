@@ -6,6 +6,7 @@
     
     .navbar__titulo {
         @include titulo;
+        cursor: pointer;
     }
 
     .navbar__links {

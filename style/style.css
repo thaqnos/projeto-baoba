@@ -20,7 +20,8 @@ body {
     font-family: "Abhaya Libre", serif;
     font-weight: bolder;
     font-size: 4rem;
-    color: #F59614; }
+    color: #F59614;
+    cursor: pointer; }
   .navbar__home .navbar__links {
     display: flex;
     justify-content: center;
@@ -110,15 +111,114 @@ body {
       line-break: loose; }
 
 @media (max-width: 768px) {
-  .header__home .header__container {
-    width: 70vw; }
-    .header__home .header__container .header__titulo {
-      line-break: normal; } }
+  .header__home {
+    flex-direction: initial;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .header__home .header__container {
+      width: 50vw; }
+      .header__home .header__container .header__titulo {
+        font-size: 2.3rem;
+        text-align: center; } }
 @media (max-width: 320px) {
   .header__home .header__container {
     width: 90vw; }
     .header__home .header__container .header__titulo {
       line-break: normal;
-      font-size: 2rem; } }
+      font-size: 2rem;
+      margin: 0; } }
+.saiba-mais__home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start; }
+  .saiba-mais__home .saiba-mais__imagem-botao {
+    margin-left: 50px;
+    margin-top: -50px; }
+    .saiba-mais__home .saiba-mais__imagem-botao .saiba-mais__imagem {
+      width: 400px;
+      height: 500px;
+      object-fit: cover;
+      object-position: center; }
+    .saiba-mais__home .saiba-mais__imagem-botao .saiba-mais__div-botao {
+      width: 400px;
+      background-color: #222222;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px; }
+      .saiba-mais__home .saiba-mais__imagem-botao .saiba-mais__div-botao .saiba-mais__botao-texto {
+        font-family: "Abhaya Libre", serif;
+        color: #F59614;
+        font-weight: bold;
+        font-size: 1.3rem;
+        text-transform: lowercase;
+        margin: 0 0 0 25px;
+        padding: 0; }
+      .saiba-mais__home .saiba-mais__imagem-botao .saiba-mais__div-botao .saiba-mais__botao {
+        cursor: pointer;
+        background-color: #F59614;
+        width: 60px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .saiba-mais__home .saiba-mais__imagem-botao .saiba-mais__div-botao .saiba-mais__botao .saiba-mais__botao-seta {
+          width: 30px;
+          transform: rotate(180deg); }
+  .saiba-mais__home .saiba-mais__icones {
+    min-width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 50px; }
+    .saiba-mais__home .saiba-mais__icones .saiba-mais__icones-div {
+      width: 25vw;
+      margin: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .saiba-mais__home .saiba-mais__icones .saiba-mais__icones-div .saiba-mais__icones-imagem {
+        width: 90px;
+        opacity: 0.3;
+        margin-right: 20px; }
+      .saiba-mais__home .saiba-mais__icones .saiba-mais__icones-div .saiba-mais__icones-titulo {
+        font-family: "Abhaya Libre", serif;
+        font-weight: bold;
+        color: #a5a5a5;
+        cursor: pointer; }
+      .saiba-mais__home .saiba-mais__icones .saiba-mais__icones-div .saiba-mais__icones-texto {
+        color: #a5a5a5; }
+    .saiba-mais__home .saiba-mais__icones .saiba-mais__icones-titulo:hover {
+      color: black; }
+
+@media (max-width: 768px) {
+  .saiba-mais__home {
+    flex-direction: column; }
+    .saiba-mais__home .saiba-mais__imagem-botao {
+      margin-left: 0; }
+      .saiba-mais__home .saiba-mais__imagem-botao .saiba-mais__imagem {
+        margin-top: 30px; }
+    .saiba-mais__home .saiba-mais__icones {
+      flex-direction: column;
+      min-width: 90vw; }
+      .saiba-mais__home .saiba-mais__icones .saiba-mais__icones-div {
+        width: 50vw;
+        margin: 20px 0; } }
+@media (max-width: 320px) {
+  .saiba-mais__home .saiba-mais__imagem-botao .saiba-mais__imagem {
+    width: 90vw;
+    height: 100vh;
+    margin-top: 30px; }
+  .saiba-mais__home .saiba-mais__imagem-botao .saiba-mais__div-botao {
+    width: 90vw; }
+    .saiba-mais__home .saiba-mais__imagem-botao .saiba-mais__div-botao .saiba-mais__botao-texto {
+      margin: 0 10px 0 10px;
+      line-break: loose; }
+  .saiba-mais__home .saiba-mais__icones {
+    width: 70%;
+    margin: 0; } }
 
 /*# sourceMappingURL=style.css.map */
