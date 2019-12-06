@@ -1,0 +1,70 @@
+.o-que-e__geral {
+    margin-top: 60px;
+    margin-bottom: 50px;
+    @include display-flex(space-around, center);
+
+    .o-que-e__div {
+        @include display-flex(center, center);
+        flex-direction: column;
+        text-align: center;
+        width: 40%;
+        height: 500px;
+        margin: 0 auto;
+        background-image: url('../../../assets/imagens/brazil-map.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 350px;
+
+        .o-que-e__titulo {
+            font-family: $font-titulo;
+            font-weight: bold;
+            font-size: 3.9rem;
+            text-transform: lowercase;
+            margin: 0;
+        }
+
+        .o-que-e__texto {
+            font-size: 1.6rem;
+            line-height: 35px;
+            line-break: loose;
+            color: rgb(165, 165, 165);
+            margin: 20px 0 50px 0;
+        }
+
+        .o-que-e__div-btn {
+            background-color: $cor-primaria;
+            width: 460px;
+            height: 70px;
+            @include display-flex(space-between, center);
+
+            .o-que-e__texto-btn {
+                color: $cor-secundaria;
+                font-family: $font-titulo;
+                font-weight: bold;
+                font-size: 1.5rem;
+                text-transform: lowercase;
+                text-align: center;
+                margin: 0 auto;
+            }
+            
+            .o-que-e__img-link {
+                background-color: $cor-secundaria;
+                cursor: pointer;
+                height: 70px;
+                @include display-flex(center, center);
+                width: 90px;
+
+                .o-que-e__img {
+                    transform: rotate(180deg);
+                    width: 30px;
+                }
+            }
+        }
+    }
+
+    .o-que-e__img-carrossel {
+        width: 90%;
+        height: 64vh;
+        object-fit: cover;
+    }
+}

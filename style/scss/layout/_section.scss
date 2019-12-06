@@ -3,20 +3,21 @@
     @include display-flex(center, center);
 
     .saiba-mais__imagem-botao {
-        margin-left: 50px;
+        margin-left: 100px;
         margin-top: -50px;
+        // margin-right: 10px;
 
         .saiba-mais__imagem {
             height: 500px;
             object-fit: cover;
             object-position: center;
-            width: 490px;
+            width: 460px;
             margin-bottom: -5px;
         }
 
         .saiba-mais__div-botao {
             background-color: $cor-primaria;
-            width: 490px;
+            width: 460px;
             height: 70px;
             @include display-flex(space-between, center);
             
@@ -59,7 +60,7 @@
             .saiba-mais__icones-imagem {
                 opacity: 0.3;
                 margin-right: 20px;
-                width: 90px;
+                width: 95px;
             }
 
             .saiba-mais__icones-titulo {
@@ -74,6 +75,8 @@
             .saiba-mais__icones-texto {
                 color: rgb(165, 165, 165);
                 margin-top: 10px;
+                font-size: 18px;
+                line-height: 26px;
             }
         }
 

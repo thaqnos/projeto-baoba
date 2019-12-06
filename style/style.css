@@ -153,17 +153,17 @@ body {
   justify-content: center;
   align-items: center; }
   .saiba-mais__home .saiba-mais__imagem-botao {
-    margin-left: 50px;
+    margin-left: 100px;
     margin-top: -50px; }
     .saiba-mais__home .saiba-mais__imagem-botao .saiba-mais__imagem {
       height: 500px;
       object-fit: cover;
       object-position: center;
-      width: 490px;
+      width: 460px;
       margin-bottom: -5px; }
     .saiba-mais__home .saiba-mais__imagem-botao .saiba-mais__div-botao {
       background-color: #222222;
-      width: 490px;
+      width: 460px;
       height: 70px;
       display: flex;
       justify-content: space-between;
@@ -203,7 +203,7 @@ body {
       .saiba-mais__home .saiba-mais__icones .saiba-mais__icones-div .saiba-mais__icones-imagem {
         opacity: 0.3;
         margin-right: 20px;
-        width: 90px; }
+        width: 95px; }
       .saiba-mais__home .saiba-mais__icones .saiba-mais__icones-div .saiba-mais__icones-titulo {
         font-family: "Abhaya Libre", serif;
         font-weight: bold;
@@ -213,7 +213,9 @@ body {
         cursor: pointer; }
       .saiba-mais__home .saiba-mais__icones .saiba-mais__icones-div .saiba-mais__icones-texto {
         color: #a5a5a5;
-        margin-top: 10px; }
+        margin-top: 10px;
+        font-size: 18px;
+        line-height: 26px; }
     .saiba-mais__home .saiba-mais__icones .saiba-mais__icones-titulo:hover {
       color: black; }
 
@@ -243,5 +245,66 @@ body {
   .saiba-mais__home .saiba-mais__icones {
     margin: 0;
     width: 70%; } }
+.o-que-e__geral {
+  margin-top: 60px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .o-que-e__geral .o-que-e__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 40%;
+    height: 500px;
+    margin: 0 auto;
+    background-image: url("../../../assets/imagens/brazil-map.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 350px; }
+    .o-que-e__geral .o-que-e__div .o-que-e__titulo {
+      font-family: "Abhaya Libre", serif;
+      font-weight: bold;
+      font-size: 3.9rem;
+      text-transform: lowercase;
+      margin: 0; }
+    .o-que-e__geral .o-que-e__div .o-que-e__texto {
+      font-size: 1.6rem;
+      line-height: 35px;
+      line-break: loose;
+      color: #a5a5a5;
+      margin: 20px 0 50px 0; }
+    .o-que-e__geral .o-que-e__div .o-que-e__div-btn {
+      background-color: #222222;
+      width: 460px;
+      height: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .o-que-e__geral .o-que-e__div .o-que-e__div-btn .o-que-e__texto-btn {
+        color: #F59614;
+        font-family: "Abhaya Libre", serif;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-transform: lowercase;
+        text-align: center;
+        margin: 0 auto; }
+      .o-que-e__geral .o-que-e__div .o-que-e__div-btn .o-que-e__img-link {
+        background-color: #F59614;
+        cursor: pointer;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90px; }
+        .o-que-e__geral .o-que-e__div .o-que-e__div-btn .o-que-e__img-link .o-que-e__img {
+          transform: rotate(180deg);
+          width: 30px; }
+  .o-que-e__geral .o-que-e__img-carrossel {
+    width: 90%;
+    height: 64vh;
+    object-fit: cover; }
 
 /*# sourceMappingURL=style.css.map */
