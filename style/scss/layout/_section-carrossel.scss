@@ -68,3 +68,31 @@
         object-fit: cover;
     }
 }
+
+@media (max-width: 768px) {
+    .o-que-e__geral {
+        flex-direction: column;
+
+        .o-que-e__div {
+            width: 90%;
+        }
+
+        .o-que-e__img-carrossel {
+            height: 450px;
+        }      
+    }
+}
+
+@media (max-width: 320px) {
+    .o-que-e__geral{
+        .o-que-e__div {
+            .o-que-e__div-btn {
+                width: 300px;
+            }
+        }
+
+        .o-que-e__img-carrossel{
+            height: 300px;
+        }
+    }
+}

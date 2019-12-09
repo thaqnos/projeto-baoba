@@ -47,10 +47,15 @@
 {
     .navbar__home {
         flex-direction: column;
-        height: 230px;
+        height: 199px;
 
         .navbar__titulo {
-            margin-bottom: -35px;
+            margin-bottom: 0px;
+            margin-top: -10px;
+        }
+
+        .navbar__links {
+            margin: -20px 0 20px 0;
         }
 
         .navbar__btn-call-to-action {

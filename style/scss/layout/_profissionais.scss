@@ -34,3 +34,31 @@
         opacity: 0.3;
     }
 }
+
+@media (max-width: 768px) {
+    .profissionais {
+        @include display-flex (center, center);
+        flex-direction: column;
+
+        .profissionais__div-flex {
+            flex-direction: column;
+            margin: 0;
+
+            .profissionais__img {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .profissionais {
+        .profissionais__div {
+            .profissionais__titulo {
+                margin: 20px 0 20px 0;
+                text-align: center;
+                padding: 0;
+            }
+        }
+    }
+}

@@ -54,5 +54,43 @@
             }
         }
     }
+}
 
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .footer__div {
+        .footer__titulo {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .footer__div {
+        .container {
+            margin: 0;
+            .footer__links {
+                flex-direction: column;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+     
+                .footer__links-item:not(.Youtube){
+                    border-right: #52525200 1px solid;            
+                }
+            }
+        }
+    
+        .footer__newsletter {
+            .footer__div {
+                flex-direction: column;
+            }
+        }
+    }
 }
