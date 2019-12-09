@@ -403,7 +403,8 @@ body {
   .footer__div .footer__newsletter .footer__newsletter-titulo {
     font-family: "Abhaya Libre", serif;
     color: #525252;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    text-transform: lowercase; }
   .footer__div .footer__newsletter .footer__newsletter-div {
     display: flex;
     justify-content: center;
