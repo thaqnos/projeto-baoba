@@ -1,0 +1,54 @@
+.conheca__geral {
+    padding: 30px;
+
+    .conheca__titulo {
+        @include titulo;
+        text-transform: lowercase;
+        color: $cor-primaria;
+        margin: 30px 0 60px 0;
+    }
+
+    .conheca__geral-div {
+        @include display-flex (center, center);
+
+        .conheca__div {
+            width: 45%;
+
+            .conheca__div-imagem {
+                background-color: #D5D4D4;
+                width: 554px;
+                height: 403px;
+                position: relative;
+                top: 14px;
+                
+                .conheca__div-img {
+                    position: absolute;
+                    top: -20px;
+                    left: -61px;
+                    width: 569px;
+                    height: 400px;
+                    object-fit: cover;
+                    object-position: center;
+                    margin-top: -20px;
+                }
+            }
+
+            .conheca__texto {
+                font-size: 22px;
+                line-height: 36px;
+            }
+        }
+    }
+
+    .conheca__quote {
+        @include titulo;
+        text-align: center;
+        color: #525252;
+        line-break: loose;
+        text-transform: lowercase;
+
+        .conheca__span {
+            color: black;
+        }
+    }
+}

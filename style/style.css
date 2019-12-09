@@ -21,7 +21,9 @@ body {
     font-weight: bolder;
     font-size: 4rem;
     color: #F59614;
-    cursor: pointer; }
+    cursor: pointer;
+    color: #F59614;
+    text-decoration: none; }
   .navbar__home .navbar__links {
     display: flex;
     justify-content: center;
@@ -31,13 +33,15 @@ body {
     font-weight: bold;
     font-size: 1.4rem;
     text-transform: lowercase;
-    color: white;
     margin: 0;
     padding: 0; }
     .navbar__home .navbar__links .navbar__links-item:not(.exclui) {
       margin-left: 40px;
       border-left: 1px solid grey;
       padding-left: 30px; }
+    .navbar__home .navbar__links .navbar__links-item {
+      text-decoration: none;
+      color: white; }
   .navbar__home .navbar__btn-call-to-action {
     border: none;
     font-family: "Abhaya Libre", serif;
@@ -49,13 +53,6 @@ body {
     border-radius: 5px;
     cursor: pointer;
     margin: 0 30px 0 0; }
-
-.navbar__links-item:hover {
-  color: #F59614;
-  cursor: pointer; }
-
-.navbar__btn-call-to-action:hover {
-  background-color: #be7003; }
 
 @media (max-width: 768px) {
   .navbar__home {
@@ -440,5 +437,50 @@ body {
         border-right: #52525200 1px solid; }
   .footer__div .footer__newsletter .footer__div {
     flex-direction: column; } }
+.conheca__geral {
+  padding: 30px; }
+  .conheca__geral .conheca__titulo {
+    font-family: "Abhaya Libre", serif;
+    font-weight: bolder;
+    font-size: 4rem;
+    color: #F59614;
+    text-transform: lowercase;
+    color: #222222;
+    margin: 30px 0 60px 0; }
+  .conheca__geral .conheca__geral-div {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .conheca__geral .conheca__geral-div .conheca__div {
+      width: 45%; }
+      .conheca__geral .conheca__geral-div .conheca__div .conheca__div-imagem {
+        background-color: #D5D4D4;
+        width: 554px;
+        height: 403px;
+        position: relative;
+        top: 14px; }
+        .conheca__geral .conheca__geral-div .conheca__div .conheca__div-imagem .conheca__div-img {
+          position: absolute;
+          top: -20px;
+          left: -61px;
+          width: 569px;
+          height: 400px;
+          object-fit: cover;
+          object-position: center;
+          margin-top: -20px; }
+      .conheca__geral .conheca__geral-div .conheca__div .conheca__texto {
+        font-size: 22px;
+        line-height: 36px; }
+  .conheca__geral .conheca__quote {
+    font-family: "Abhaya Libre", serif;
+    font-weight: bolder;
+    font-size: 4rem;
+    color: #F59614;
+    text-align: center;
+    color: #525252;
+    line-break: loose;
+    text-transform: lowercase; }
+    .conheca__geral .conheca__quote .conheca__span {
+      color: black; }
 
 /*# sourceMappingURL=style.css.map */
