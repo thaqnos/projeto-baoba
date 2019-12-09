@@ -46,9 +46,32 @@
         color: #525252;
         line-break: loose;
         text-transform: lowercase;
+        margin-top: 80px;
 
         .conheca__span {
             color: black;
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .conheca__geral {
+        .conheca__geral-div {
+            flex-direction: column;
+    
+            .conheca__div {
+                width: 100%;
+    
+                .conheca__div-imagem {
+                    margin-left: -113px;
+                    margin: 0 auto;
+                    text-align: center;
+    
+                    .conheca__div-img {
+                        left: -63px;
+                    }
+                }
+            }
+        }        
     }
 }
