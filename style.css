@@ -308,77 +308,21 @@ body {
     object-fit: cover; }
 
 .profissionais {
-  background-color: #222222;
-  padding-top: 5px;
-  padding-bottom: 60px; }
+  background-color: #222222; }
   .profissionais .profissionais__div .profissionais__titulo {
     font-family: "Abhaya Libre", serif;
     font-size: 50px;
-    color: #757575;
-    margin-left: 55px;
-    margin-bottom: 50px;
-    text-transform: lowercase; }
+    color: #757575; }
   .profissionais .profissionais__div-flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    width: 90%;
-    margin-left: 55px; }
+    width: 90%; }
     .profissionais .profissionais__div-flex .profissionais__img {
-      width: 250px;
-      height: 250px;
+      width: 300px;
+      height: 300px;
       object-fit: cover;
       object-position: center; }
-  .profissionais .profissionais__img:hover {
-    background-color: black;
-    opacity: 0.3; }
-
-.container {
-  margin: 0 90px 0 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-
-.footer__div {
-  background-color: #131212; }
-  .footer__div .footer__titulo {
-    font-family: "Abhaya Libre", serif;
-    font-weight: bolder;
-    font-size: 4rem;
-    color: #F59614;
-    color: #525252;
-    cursor: pointer; }
-  .footer__div .footer__links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .footer__div .footer__links .footer__links-item {
-      margin-left: 10px;
-      color: #525252;
-      text-transform: lowercase;
-      font-family: "Abhaya Libre", serif;
-      font-size: 25px;
-      padding-right: 20px; }
-    .footer__div .footer__links .footer__links-item:not(.Youtube) {
-      border-right: #525252 1px solid; }
-  .footer__div .footer__newsletter .footer__newsletter-titulo {
-    font-family: "Abhaya Libre", serif;
-    color: #525252;
-    margin-bottom: 5px; }
-  .footer__div .footer__newsletter .footer__newsletter-div {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .footer__div .footer__newsletter .footer__newsletter-div .footer__newsletter-input {
-      background-color: #131212;
-      border: #525252 solid 1px;
-      padding: 5px;
-      border-radius: 5px; }
-    .footer__div .footer__newsletter .footer__newsletter-div .footer__newsletter-img {
-      width: 27px;
-      margin-left: 5px;
-      cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */

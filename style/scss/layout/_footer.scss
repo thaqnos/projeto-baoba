@@ -1,0 +1,58 @@
+.container {
+    margin: 0 90px 0 50px;
+    @include display-flex(space-between, center);
+}
+
+.footer__div {
+    background-color: rgb(19, 18, 18);
+
+    .footer__titulo {
+        @include titulo;
+        color: #525252;
+        cursor: pointer;
+    }
+
+    .footer__links {
+        list-style: none;
+        @include display-flex(center, center);
+
+        .footer__links-item {
+            margin-left: 10px;
+            color: #525252;
+            text-transform: lowercase;
+            font-family: $font-titulo;
+            font-size: 25px;
+            padding-right: 20px;
+        }
+        
+        .footer__links-item:not(.Youtube){
+            border-right: #525252 1px solid;            
+        }
+    }
+
+    .footer__newsletter {
+        .footer__newsletter-titulo {
+            font-family: $font-titulo;
+            color: #525252;
+            margin-bottom: 5px;
+        }
+
+        .footer__newsletter-div {
+            @include display-flex (center,center);
+
+            .footer__newsletter-input {
+                background-color: rgb(19, 18, 18);
+                border: #525252 solid 1px;
+                padding: 5px;
+                border-radius: 5px;
+            }
+    
+            .footer__newsletter-img {
+                width: 27px;
+                margin-left: 5px;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
