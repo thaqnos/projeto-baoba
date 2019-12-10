@@ -55,14 +55,17 @@ body {
 @media (max-width: 768px) {
   .navbar__home {
     flex-direction: column;
-    height: 199px; }
+    height: 250px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
     .navbar__home .navbar__titulo {
       margin-bottom: 0px;
-      margin-top: -10px; }
+      margin-top: 0; }
     .navbar__home .navbar__links {
-      margin: -20px 0 20px 0; }
+      margin: -5px 0 31px 0; }
     .navbar__home .navbar__btn-call-to-action {
-      margin-top: -25px;
       font-weight: 1rem;
       padding: 10px 15px; } }
 @media (max-width: 320px) {
@@ -491,5 +494,115 @@ body {
         text-align: center; }
         .conheca__geral .conheca__geral-div .conheca__div .conheca__div-imagem .conheca__div-img {
           left: -63px; } }
+.conheca__header .conheca__header-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center; }
+
+.conheca__main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 60px 0; }
+  .conheca__main .conheca__main-section {
+    width: 40%;
+    margin-top: 72px;
+    margin-left: auto; }
+    .conheca__main .conheca__main-section .conheca__main-section-titulo {
+      font-family: "Abhaya Libre", serif;
+      font-weight: bolder;
+      font-size: 4rem;
+      color: #F59614;
+      text-transform: lowercase;
+      color: #222222;
+      margin-top: -77px;
+      margin-bottom: auto; }
+    .conheca__main .conheca__main-section .conheca__main-section-texto {
+      font-size: 23px;
+      line-height: 30px;
+      color: #525252; }
+      .conheca__main .conheca__main-section .conheca__main-section-texto span {
+        color: black; }
+    .conheca__main .conheca__main-section .conheca__main-section-form {
+      background-color: #dadada;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 360px;
+      height: 328px;
+      padding: 25px 8px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      margin-top: -107px; }
+      .conheca__main .conheca__main-section .conheca__main-section-form .conheca__main-section-input {
+        border: none;
+        width: 200px;
+        margin: 5px;
+        padding: 10px 15px;
+        width: 130px;
+        border-radius: 2px; }
+      .conheca__main .conheca__main-section .conheca__main-section-form .conheca__main-section-input::placeholder {
+        font-family: 'Actor', sans-serif; }
+      .conheca__main .conheca__main-section .conheca__main-section-form .conheca__main-section-input:focus {
+        outline: none;
+        border-color: #F59614;
+        box-shadow: 0 0 10px #F59614; }
+      .conheca__main .conheca__main-section .conheca__main-section-form .textarea-form {
+        width: 80%;
+        margin-bottom: 30px; }
+    .conheca__main .conheca__main-section .conheca__main-btn {
+      background-color: #222222;
+      width: 360px;
+      height: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .conheca__main .conheca__main-section .conheca__main-btn .conheca__main-texto {
+        color: #F59614;
+        font-family: "Abhaya Libre", serif;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-transform: lowercase;
+        text-align: center;
+        margin: 0 auto; }
+      .conheca__main .conheca__main-section .conheca__main-btn .conheca__main-link {
+        background-color: #F59614;
+        cursor: pointer;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90px; }
+        .conheca__main .conheca__main-section .conheca__main-btn .conheca__main-link .conheca__main-img {
+          transform: rotate(180deg);
+          width: 30px; }
+
+@media (max-width: 768px) {
+  .conheca__main {
+    flex-direction: column;
+    width: 70%;
+    margin: auto; }
+    .conheca__main .conheca__main-section {
+      width: 100%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column; }
+      .conheca__main .conheca__main-section .conheca__main-section-titulo {
+        margin: 0; }
+      .conheca__main .conheca__main-section .conheca__main-section-form {
+        margin: 0; } }
+@media (max-width: 320px) {
+  .conheca__main .conheca__main-section .conheca__main-section-form {
+    width: 280px;
+    height: 400px; }
+    .conheca__main .conheca__main-section .conheca__main-section-form .conheca__main-section-input {
+      width: 100%; }
+  .conheca__main .conheca__main-section .conheca__main-btn {
+    width: 278px; } }
 
 /*# sourceMappingURL=style.css.map */
