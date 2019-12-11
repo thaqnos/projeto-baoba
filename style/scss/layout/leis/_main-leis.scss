@@ -1,0 +1,12 @@
+.leis-secao {
+    .leis-secao__section {
+        .leis-secao__titulo {
+            @include titulo;
+            color: $cor-primaria;
+        }
+
+        .leis-secao__subtitulo {
+            
+        }
+    }
+}

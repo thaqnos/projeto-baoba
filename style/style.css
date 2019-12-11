@@ -610,4 +610,11 @@ body {
   object-fit: cover;
   object-position: top; }
 
+.leis-secao .leis-secao__section .leis-secao__titulo {
+  font-family: "Abhaya Libre", serif;
+  font-weight: bolder;
+  font-size: 4rem;
+  color: #F59614;
+  color: #222222; }
+
 /*# sourceMappingURL=style.css.map */
