@@ -7,15 +7,21 @@ const textoInvalido = document.getElementById('texto-invalido')
 
 formConheca.addEventListener('submit', function(evento){
     evento.preventDefault()
+
     const inputNome = document.getElementById('inputNome').value
     const inputSobrenome = document.getElementById('inputSobrenome').value
     const inputTelefone = document.getElementById('inputTelefone').value
     const inputEmail = document.getElementById('inputEmail').value
 
-    if(nome.trim() === "" || sobrenome.trim() === "" || telefone.trim() === "" || email.trim() === ""){
-        
+    if(inputNome.trim() === ""){
+        nomeInvalido.textContent = 'Por favor, insira seu nome'
+    } if(inputSobrenome.trim() === ""){
+        sobrenomeInvalido.textContent = "Por favor, insira seu sobrenome"
+    } if(inputTelefone.trim() === ""){
+        telefoneInvalido.textContent = "Por favor, insira seu telefone"
+    } if(inputEmail.trim() === ""){
+        emailInvalido.textContent = "Por favor, insira seu e-mail"
     } else {
         formConheca.reset()
     }
-    
 })
