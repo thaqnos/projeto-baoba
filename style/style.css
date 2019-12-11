@@ -7,6 +7,10 @@ body {
   font-family: 'Actor', sans-serif;
   font-size: 15px; }
 
+a {
+  text-decoration: none;
+  color: #525252; }
+
 .navbar__home {
   display: flex;
   justify-content: space-between;

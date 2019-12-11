@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Actor&display=swap" rel="stylesheet">
     <!--Font Actor-->
     <title>Projeto Baobá</title>
+    <script defer src="./scripts/form.js"></script>
 </head>
 
 <body>
@@ -34,17 +35,28 @@
             <p class="conheca__main-section-texto">O Baobá é um projeto sem fins lucrativos, com isso, contamos com a colaboração da comunidade pra estarmos sempre conscientes dos nossos direitos. Fique a vontade para contribuir da maneira que puder, inclusive com um ‘olá’ ou alguma lei que acredite ser importante sabermos. O quanto antes entraremos em contato. <span>Por nós e para nós</span>. </p>
         </section>
         <section class="conheca__main-section">
-            <form class="conheca__main-section-form">
-                <input class="conheca__main-section-input" type="text" placeholder="Nome"/>
-                <input class="conheca__main-section-input" type="text" placeholder="Sobrenome"/>
-                <input class="conheca__main-section-input" type="tel" placeholder="Telefone"/>
-                <input class="conheca__main-section-input" type="email" placeholder="E-mail">
-                <textarea class="conheca__main-section-input textarea-form" name="texto" id="none" cols="30" rows="10" placeholder="Como gostaria de contribuir?"></textarea>
+            <form id="formularioConheca" class="conheca__main-section-form">
+                <input id="inputNome" class="conheca__main-section-input" type="text" placeholder="Nome"/>
+                <p id="nome-invalido"></p>
+
+                <input id="inputSobrenome" class="conheca__main-section-input" type="text" placeholder="Sobrenome"/>
+                <p id="sobrenome-invalido"></p>
+
+                <input id="inputTelefone" class="conheca__main-section-input" type="tel" placeholder="Telefone"/>
+                <p id="telefone-invalido"></p>
+
+                <input id="inputEmail" class="conheca__main-section-input" type="email" placeholder="E-mail">
+                <p id="email-invalido"></p>
+
+                <textarea class="conheca__main-section-input textarea-form" name="texto" id="texto" cols="30" rows="10" placeholder="Como gostaria de contribuir?"></textarea>
+                <p id="texto-invalido"></p>
+                
+                <button id="botao">Enviar</button>
             </form>
-            <div class="conheca__main-btn">
+            <!-- <div class="conheca__main-btn">
                 <p class="conheca__main-texto">Enviar</p>
                 <a class="conheca__main-link"><img class="conheca__main-img" src="./assets/imagens/seta.svg" alt="Ilustração de seta"></a>
-            </div>
+            </div> -->
         </section>
     </main>
 
