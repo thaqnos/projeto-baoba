@@ -689,4 +689,14 @@ body {
               transform: rotate(180deg);
               width: 30px; }
 
+@media (max-width: 320px) {
+  .leis-secao .leis-cards {
+    flex-direction: column; }
+    .leis-secao .leis-cards .leis-cards__div {
+      flex-direction: column; }
+      .leis-secao .leis-cards .leis-cards__div .leis-cards__div-render {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 0 20px 0; } }
+
 /*# sourceMappingURL=style.css.map */
