@@ -623,5 +623,70 @@ body {
     font-size: 2rem;
     color: #525252;
     margin: 0 0 60px 0; }
+  .leis-secao .leis-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .leis-secao .leis-cards .leis-cards__div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap; }
+      .leis-secao .leis-cards .leis-cards__div .leis-cards__div-render {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        align-self: flex-start;
+        width: 30%;
+        padding: 30px 20px;
+        margin: 20px;
+        background-color: #E7E7E7;
+        text-align: center;
+        border-radius: 5px; }
+        .leis-secao .leis-cards .leis-cards__div .leis-cards__div-render .leis-card__div-titulo,
+        .leis-secao .leis-cards .leis-cards__div .leis-cards__div-render .leis-card__div-paragrafo,
+        .leis-secao .leis-cards .leis-cards__div .leis-cards__div-render .leis-card__div-inciso,
+        .leis-secao .leis-cards .leis-cards__div .leis-cards__div-render .leis-card__div-lei {
+          font-size: 2rem;
+          margin: 0; }
+        .leis-secao .leis-cards .leis-cards__div .leis-cards__div-render .leis-card__div-paragrafo,
+        .leis-secao .leis-cards .leis-cards__div .leis-cards__div-render .leis-card__div-lei,
+        .leis-secao .leis-cards .leis-cards__div .leis-cards__div-render .leis-card__div-inciso {
+          font-size: 1rem; }
+        .leis-secao .leis-cards .leis-cards__div .leis-cards__div-render .leis-card__div-titulo {
+          font-weight: lighter;
+          margin-bottom: 10px; }
+        .leis-secao .leis-cards .leis-cards__div .leis-cards__div-render .leis-card__div-inciso,
+        .leis-secao .leis-cards .leis-cards__div .leis-cards__div-render .leis-card__div-paragrafo {
+          font-style: oblique; }
+        .leis-secao .leis-cards .leis-cards__div .leis-cards__div-render .leis-card__div-lei {
+          color: #757575; }
+        .leis-secao .leis-cards .leis-cards__div .leis-cards__div-render .leis-card__btn {
+          background-color: #222222;
+          width: 387px;
+          height: 70px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center; }
+          .leis-secao .leis-cards .leis-cards__div .leis-cards__div-render .leis-card__btn .leis-card__texto {
+            color: #F59614;
+            font-family: "Abhaya Libre", serif;
+            font-weight: bold;
+            font-size: 1.5rem;
+            text-transform: lowercase;
+            text-align: center;
+            margin: 0 auto; }
+          .leis-secao .leis-cards .leis-cards__div .leis-cards__div-render .leis-card__btn .leis-card__link {
+            background-color: #F59614;
+            cursor: pointer;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90px; }
+            .leis-secao .leis-cards .leis-cards__div .leis-cards__div-render .leis-card__btn .leis-card__link .leis-card__img {
+              transform: rotate(180deg);
+              width: 30px; }
 
 /*# sourceMappingURL=style.css.map */
