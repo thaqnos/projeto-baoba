@@ -1,0 +1,64 @@
+.profissionais {
+    background-color: $cor-primaria;
+    padding-top: 5px;
+    padding-bottom: 60px;
+
+    .profissionais__div {
+        .profissionais__titulo {
+            font-family: $font-titulo;
+            font-size: 50px;
+            color: #757575;
+            margin-left: 55px;
+            margin-bottom: 50px;
+            text-transform: lowercase;
+        }
+    }
+    
+    .profissionais__div-flex {
+        @include display-flex (space-between, center);
+        flex-wrap: wrap;
+        width: 90%;
+        margin-left: 55px;
+        
+        .profissionais__img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+
+    .profissionais__img:hover {
+        background-color: black;
+        opacity: 0.3;
+    }
+}
+
+@media (max-width: 768px) {
+    .profissionais {
+        @include display-flex (center, center);
+        flex-direction: column;
+
+        .profissionais__div-flex {
+            flex-direction: column;
+            margin: 0;
+
+            .profissionais__img {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .profissionais {
+        .profissionais__div {
+            .profissionais__titulo {
+                margin: 20px 0 20px 0;
+                text-align: center;
+                padding: 0;
+            }
+        }
+    }
+}

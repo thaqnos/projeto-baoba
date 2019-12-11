@@ -1,0 +1,23 @@
+{
+  "name": "projeto-baoba",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass style/style.scss style/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thaqnos/projeto-baoba.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thaqnos/projeto-baoba/issues"
+  },
+  "homepage": "https://github.com/thaqnos/projeto-baoba#readme",
+  "devDependencies": {
+    "sass": "^1.23.7"
+  }
+}
