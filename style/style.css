@@ -75,7 +75,7 @@ a {
     .navbar__home .navbar__btn-call-to-action {
       font-weight: 1rem;
       padding: 10px 15px; } }
-@media (max-width: 320px) {
+@media (max-width: 425px) and (min-width: 320px) {
   .navbar__home {
     padding: 8px;
     min-width: 100vw;
@@ -144,7 +144,7 @@ a {
         text-align: center; }
       .header__home .header__container .header__btn-call-to-action {
         margin-top: 20px; } }
-@media (max-width: 320px) {
+@media (max-width: 425px) and (min-width: 320px) {
   .header__home .header__container {
     width: 90vw; }
     .header__home .header__container .header__titulo {
@@ -238,7 +238,7 @@ a {
       .saiba-mais__home .saiba-mais__icones .saiba-mais__icones-div {
         margin: 20px 0;
         width: 50vw; } }
-@media (max-width: 320px) {
+@media (max-width: 425px) and (min-width: 320px) {
   .saiba-mais__home .saiba-mais__imagem-botao .saiba-mais__imagem {
     height: 100vh;
     margin-top: 30px;
@@ -326,7 +326,7 @@ a {
       width: 90%; }
     .o-que-e__geral .o-que-e__img-carrossel {
       height: 450px; } }
-@media (max-width: 320px) {
+@media (max-width: 425px) and (min-width: 320px) {
   .o-que-e__geral .o-que-e__div .o-que-e__div-btn {
     width: 300px; }
   .o-que-e__geral .o-que-e__img-carrossel {
@@ -395,7 +395,7 @@ a {
       margin: 0; }
       .profissionais .profissionais__div-flex .profissionais__img {
         margin-bottom: 20px; } }
-@media (max-width: 320px) {
+@media (max-width: 425px) and (min-width: 320px) {
   .profissionais .profissionais__div .profissionais__titulo {
     margin: 20px 0 20px 0;
     text-align: center;
@@ -457,7 +457,7 @@ a {
   .footer__div .footer__titulo {
     margin-top: 10px;
     margin-bottom: 10px; } }
-@media (max-width: 320px) {
+@media (max-width: 425px) and (min-width: 320px) {
   .footer__div .container {
     margin: 0; }
     .footer__div .container .footer__links {
@@ -527,6 +527,21 @@ a {
         text-align: center; }
         .conheca__geral .conheca__geral-div .conheca__div .conheca__div-imagem .conheca__div-img {
           left: -63px; } }
+@media (max-width: 425px) {
+  .conheca__geral .conheca__geral-div {
+    flex-direction: column; }
+    .conheca__geral .conheca__geral-div .conheca__div {
+      width: 100%; }
+      .conheca__geral .conheca__geral-div .conheca__div .conheca__div-imagem {
+        margin-left: 0;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        height: 150px; }
+        .conheca__geral .conheca__geral-div .conheca__div .conheca__div-imagem .conheca__div-img {
+          left: 0;
+          width: 100%;
+          height: 189px; } }
 .conheca__header .conheca__header-img {
   width: 100%;
   height: 300px;
@@ -707,6 +722,24 @@ a {
               transform: rotate(180deg);
               width: 30px; }
 
+@media (max-width: 425px) {
+  .leis-secao .leis-cards {
+    flex-direction: column; }
+    .leis-secao .leis-cards .leis-cards__div {
+      flex-direction: column; }
+      .leis-secao .leis-cards .leis-cards__div .leis-cards__div-render {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 0 20px 0; } }
+@media (max-width: 375px) {
+  .leis-secao .leis-cards {
+    flex-direction: column; }
+    .leis-secao .leis-cards .leis-cards__div {
+      flex-direction: column; }
+      .leis-secao .leis-cards .leis-cards__div .leis-cards__div-render {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 0 20px 0; } }
 @media (max-width: 320px) {
   .leis-secao .leis-cards {
     flex-direction: column; }
