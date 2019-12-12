@@ -351,9 +351,35 @@ a {
       height: 250px;
       object-fit: cover;
       object-position: center; }
-  .profissionais .profissionais__img:hover {
-    background-color: black;
-    opacity: 0.3; }
+    .profissionais .profissionais__div-flex .imagem {
+      position: relative; }
+      .profissionais .profissionais__div-flex .imagem .capa {
+        text-align: center;
+        background: rgba(0, 0, 0, 0.651);
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        top: 0;
+        display: none;
+        color: #F59614;
+        font-family: "Abhaya Libre", serif; }
+        .profissionais .profissionais__div-flex .imagem .capa .capa-titulo {
+          font-weight: bold;
+          margin: 30px 0 0 0;
+          font-size: 1.5rem; }
+        .profissionais .profissionais__div-flex .imagem .capa .capa-profissao {
+          margin-top: 5px;
+          font-size: 1.2rem; }
+        .profissionais .profissionais__div-flex .imagem .capa .capa-link {
+          background-color: #F59614;
+          color: #222222;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer; }
+          .profissionais .profissionais__div-flex .imagem .capa .capa-link .capa-img {
+            margin-right: 5px; }
+  .profissionais .imagem:hover .capa {
+    display: block; }
 
 @media (max-width: 768px) {
   .profissionais {
