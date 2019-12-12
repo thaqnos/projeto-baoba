@@ -538,12 +538,15 @@ a {
       padding: 25px 0 0 0;
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
-      margin-top: -40px; }
+      margin-top: -40px;
+      margin-bottom: 10px; }
       .conheca__main .conheca__main-section .conheca__main-section-form .conheca__main-section-input {
         border: none;
         padding: 10px 15px;
         width: 80%;
         border-radius: 2px; }
+      .conheca__main .conheca__main-section .conheca__main-section-form .paragrafo {
+        min-height: 12px; }
       .conheca__main .conheca__main-section .conheca__main-section-form .conheca__main-section-invalido {
         color: red;
         font-size: 10px; }
@@ -587,7 +590,7 @@ a {
     width: 280px;
     height: 400px; }
     .conheca__main .conheca__main-section .conheca__main-section-form .conheca__main-section-input {
-      width: 100%; }
+      width: 85%; }
   .conheca__main .conheca__main-section .conheca__main-btn {
     width: 278px; } }
 .conheca__header .leis {
