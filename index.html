@@ -7,9 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre:400,600,800&display=swap" rel="stylesheet">
-    <!--Font Abhaya-->
     <link href="https://fonts.googleapis.com/css?family=Actor&display=swap" rel="stylesheet">
-    <!--Font Actor-->
+    <script defer src="https://kit.fontawesome.com/baa8a87fc1.js" crossorigin="anonymous"></script>
     <title>Projeto Baobá</title>
 </head>
 
@@ -26,9 +25,9 @@
     <header class="header__home">
         <div class="header__container">
             <h2 class="header__titulo">Se informe e receba toda a ajuda necessária</h2>
-            <button class="header__btn-call-to-action">Saiba mais</button>
         </div>
     </header>
+
     <main>
         <section class="saiba-mais__home">
             <div class="saiba-mais__imagem-botao">
@@ -36,8 +35,8 @@
                     alt="Fotografia de duas meninas negras, à frente uma menina de cabelo liso com faixa no cabelo e blusa branca, mais atrás uma menina de blusa branca e cabelo preso" />
                 <div class="saiba-mais__div-botao">
                     <p class="saiba-mais__botao-texto">Saiba mais sobre os seus direitos</p>
-                    <a class="saiba-mais__botao"><img class="saiba-mais__botao-seta" src="./assets/imagens/seta.svg"
-                            alt="Ilustração de seta"></a>
+                    <a class="saiba-mais__botao" href="leis.html"><img class="saiba-mais__botao-seta"
+                            src="./assets/imagens/seta.svg" alt="Ilustração de seta"></a>
                 </div>
             </div>
             <div class="saiba-mais__icones">
@@ -82,6 +81,7 @@
                 </div>
             </div>
         </section>
+
         <section class="o-que-e__geral">
             <div class="o-que-e__div">
                 <h3 class="o-que-e__titulo">O que é Baobá?</h3>
@@ -92,12 +92,12 @@
                     ao racismo.</p>
                 <div class="o-que-e__div-btn">
                     <p class="o-que-e__texto-btn">Conheça mais sobre a Baobá</p>
-                    <a class="o-que-e__img-link"><img class="o-que-e__img" src="./assets/imagens/seta.svg"
-                            alt="Ilustração de seta"></a>
+                    <a class="o-que-e__img-link" href="conheca.html"><img class="o-que-e__img"
+                            src="./assets/imagens/seta.svg" alt="Ilustração de seta"></a>
                 </div>
             </div>
             <div class="o-que-e__div">
-                <img class="o-que-e__img-carrossel" src='./assets/imagens/hands-up.jpg'>
+                <img class="o-que-e__img-carrossel" id="img-oque" src='./assets/imagens/hands-up.jpg'>
             </div>
         </section>
         <section class="profissionais">
@@ -105,10 +105,47 @@
                 <h2 class="profissionais__titulo">Nossos profissionais</h2>
             </div>
             <div class="profissionais__div-flex">
-                <img class="profissionais__img" src="./assets/imagens/profissional1.jpg">
-                <img class="profissionais__img" src="./assets/imagens/profissional2.png">
-                <img class="profissionais__img" src="./assets/imagens/profissional3.jpg">
-                <img class="profissionais__img" src="./assets/imagens/profissional4.jpg">
+                <div class="imagem">
+                    <img class="profissionais__img" src="./assets/imagens/profissional1.jpg">
+                    <div class="capa">
+                        <h3 class="capa-titulo">João Pedro Cardoso</h3>
+                        <p class="capa-profissao">Advogado</p>
+                        <a class="capa-link">
+                            <i class="fab fa-whatsapp capa-img"></i> Fale comigo
+                        </a>
+                    </div>
+                </div>
+                <div class="imagem">
+                    <img class="profissionais__img" src="./assets/imagens/profissional2.png">
+                    <div class="capa">
+                        <h3 class="capa-titulo">Alice Oliveira</h3>
+                        <p class="capa-profissao">Psicóloga</p>
+                        <a class="capa-link">
+                            <i class="fab fa-whatsapp capa-img"></i> Fale comigo
+                        </a>
+                    </div>
+                </div>
+                <div class="imagem">
+                    <img class="profissionais__img" src="./assets/imagens/profissional3.jpg">
+                    <div class="capa">
+                        <h3 class="capa-titulo">Bell Nascimento</h3>
+                        <p class="capa-profissao">Psicóloga</p>
+                        <a class="capa-link">
+                            <i class="fab fa-whatsapp capa-img"></i> Fale comigo
+                        </a>
+                    </div>
+                </div>
+                <div class="imagem">
+                    <img class="profissionais__img" src="./assets/imagens/profissional4.jpg">
+                    <div class="capa">
+                        <h3 class="capa-titulo">Yasmin Soares</h3>
+                        <p class="capa-profissao">Advogada</p>
+                        <a class="capa-link">
+                            <i class="fab fa-whatsapp capa-img"></i> Fale comigo
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
@@ -116,15 +153,16 @@
         <div class="container">
             <h1 class="footer__titulo"> Baobá </h1>
             <ul class="footer__links">
-                <li class="footer__links-item">Twitter</li>
-                <li class="footer__links-item">Facebook</li>
-                <li class="footer__links-item Youtube">Youtube</li>
+                <li class="footer__links-item"><a href="https://twitter.com/" target="_blank">twitter</a></li>
+                <li class="footer__links-item"><a href="https://facebook.com/" target="_blank">facebook</a></li>
+                <li class="footer__links-item Youtube"><a href="https://youtube.com/" target="_blank">youtube</a></li>
             </ul>
             <div class="footer__newsletter">
                 <h2 class="footer__newsletter-titulo">Newsletter</h2>
                 <div class="footer__newsletter-div">
                     <input class="footer__newsletter-input" type="email" placeholder="Digite seu e-mail">
-                    <a><img class="footer__newsletter-img" src="./assets/imagens/envelope-solid.svg" alt="Ilustração de um evelope de cartas fechado"></a>
+                    <a><img class="footer__newsletter-img" src="./assets/imagens/envelope-solid.svg"
+                            alt="Ilustração de um evelope de cartas fechado"></a>
                 </div>
             </div>
         </div>

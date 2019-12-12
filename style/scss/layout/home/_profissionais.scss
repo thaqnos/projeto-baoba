@@ -26,12 +26,49 @@
             object-fit: cover;
             object-position: center;
         }
+
+        .imagem {
+            position: relative;
+
+            .capa {
+                text-align: center;
+                background: rgba(0, 0, 0, 0.651);
+                width: 250px;
+                height: 250px;
+                position: absolute;
+                top: 0;
+                display: none;
+                color: $cor-secundaria;
+                font-family: $font-titulo;
+
+                .capa-titulo {
+                    font-weight: bold;
+                    margin: 30px 0 0 0;
+                    font-size: 1.5rem;
+                }
+
+                .capa-profissao {
+                    margin-top: 5px;
+                    font-size: 1.2rem;
+                }
+
+                .capa-link {
+                    background-color: $cor-secundaria;
+                    color: $cor-primaria;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    cursor: pointer;
+
+                    .capa-img {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
     }
-
-
-    .profissionais__img:hover {
-        background-color: black;
-        opacity: 0.3;
+    
+    .imagem:hover .capa{
+        display: block;
     }
 }
 

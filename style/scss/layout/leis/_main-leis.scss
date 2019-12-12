@@ -1,0 +1,114 @@
+.leis-secao {
+    margin: 0 30px 0 30px;
+
+    .leis-secao__section {
+        .leis-secao__titulo {
+            @include titulo;
+            color: $cor-primaria;
+            margin: 30px 0 20px 0;
+        }
+
+        .leis-secao__subtitulo {
+            font-size: 2rem;
+            color: #525252;
+            margin: 0 0 60px 0;
+        }
+    }
+
+    .leis-cards {
+        @include display-flex (center, center);        
+        
+        .leis-cards__div {
+            @include display-flex (center, center);
+            flex-wrap: wrap;
+
+            .leis-cards__div-render {
+                @include display-flex (center, center);
+                flex-direction: column;
+                align-self: flex-start;
+                width: 30%;
+                padding: 30px 20px;
+                margin: 20px;
+                background-color: #E7E7E7;
+                text-align: center;
+                border-radius: 5px;
+
+                .leis-card__div-titulo,
+                .leis-card__div-paragrafo, 
+                .leis-card__div-inciso,
+                .leis-card__div-lei {
+                    font-size: 2rem;
+                    margin: 0;
+                }
+
+                .leis-card__div-paragrafo,
+                .leis-card__div-lei,
+                .leis-card__div-inciso {
+                    font-size: 1rem;
+                }
+
+                .leis-card__div-titulo {
+                    font-weight: lighter;
+                    margin-bottom: 10px;
+                }
+
+                .leis-card__div-inciso,
+                .leis-card__div-paragrafo {
+                    font-style: oblique;
+                }
+
+                .leis-card__div-lei {
+                    color: #757575;
+                }
+
+                .leis-card__btn {
+                    background-color: $cor-primaria;
+                    width: 387px;
+                    height: 70px;
+                    @include display-flex(space-between, center);
+
+                    .leis-card__texto {
+                        color: $cor-secundaria;
+                        font-family: $font-titulo;
+                        font-weight: bold;
+                        font-size: 1.5rem;
+                        text-transform: lowercase;
+                        text-align: center;
+                        margin: 0 auto;
+                    }
+                    
+                    .leis-card__link {
+                        background-color: $cor-secundaria;
+                        cursor: pointer;
+                        height: 70px;
+                        @include display-flex(center, center);
+                        width: 90px;
+        
+                        .leis-card__img {
+                            transform: rotate(180deg);
+                            width: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    .leis-secao {
+        .leis-cards {
+            flex-direction: column;
+    
+            .leis-cards__div {
+                flex-direction: column;
+
+                .leis-cards__div-render {
+                    flex-direction: column;
+                    width: 100%;
+                    margin: 0 0 20px 0;
+                }
+            }
+        }
+    }
+}

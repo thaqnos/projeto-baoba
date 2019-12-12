@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre:400,600,800&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--Font Abhaya-->
     <link href="https://fonts.googleapis.com/css?family=Actor&display=swap" rel="stylesheet">
     <!--Font Actor-->
@@ -23,27 +24,24 @@
         </ul>
         <button class="navbar__btn-call-to-action">Denuncie</button>
     </nav>
-    <main class="conheca__geral">
-        <h2 class="conheca__titulo">Conheça o Baobá</h2>
-        <div class="conheca__geral-div">
-            <div class="conheca__div">
-                <div class="conheca__div-imagem">
-                    <img class="conheca__div-img" src="./assets/imagens/friends-conheca.jpg"
-                        alt="Três jovens negros sorridentes olhando para frente, da esquerda pra direita: mulher de tranças, jaqueta amarela e blusa vermelha; ao centro, homem de camisa xadrez marrom e blusa branca; à direita, mulher de cabelo curto com faixa no cabelo e blusa de frio cinza.">
-                </div>
+
+    <header class="conheca__header">
+        <img class="conheca__header-img leis" src="./assets/imagens/header-leis.jpg"
+            alt="Imagem de grupo de pessoas negras de mãos dadas estendidas pra cima.">
+    </header>
+
+    <main class="leis-secao">
+        <section class="leis-secao__section">
+            <h2 class="leis-secao__titulo">Lei nº 7716/1989</h2>
+            <p class="leis-secao__subtitulo">Define os crimes resultantes de preconceito de raça ou de cor</p>
+        </section>
+        <section class="leis-cards">
+            <div class="leis-cards__div" id="leis-cards">
+
             </div>
-            <div class="conheca__div">
-                <p class="conheca__texto">O Baobá tem como objetivo apoderar-se das leis para utilizá-la como ferramenta
-                    preventiva ao racismo, oferecendo também auxílio psicológico e jurídico relativo à condição da
-                    comunidade negra. Propomos medidas que visem a defesa dos seus direitos, prevenção das
-                    discriminações e plena segurança na vida socioeconômica, política e cultural. </p>
-                <p class="conheca__texto"> O projeto é sem fins lucrativos e contamos com a colaboração e auxílio da
-                    comunidade para incrementarmos a plataforma com leis atuais e profissionais capacitados.</p>
-            </div>
-        </div>
-        <p class="conheca__quote"><span class="conheca__span">"</span>Feito por nós, para nós<span
-                class="conheca__span">"</span></p>
+        </section>
     </main>
+
     <footer class="footer__div">
         <div class="container">
             <h1 class="footer__titulo"> Baobá </h1>
@@ -62,6 +60,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./scripts/leis.js"></script>
 </body>
 
 </html>

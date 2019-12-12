@@ -10,20 +10,19 @@
 
 .conheca__main {
     width: 100%;
-    @include display-flex(center, center);
+    @include display-flex(center, flex-start);
     padding: 0 0 60px 0;
 
     .conheca__main-section {
         width: 40%;
-        margin-top: 72px;
         margin-left: auto;
 
         .conheca__main-section-titulo {
             @include titulo;
             text-transform: lowercase;
             color: $cor-primaria;
-            margin-top: -77px;
             margin-bottom: auto;
+            margin-top: 20px;
         }
     
         .conheca__main-section-texto {
@@ -39,21 +38,28 @@
         .conheca__main-section-form {
             background-color: #dadada;
             @include display-flex (center, center);
-            flex-wrap: wrap;
+            flex-direction: column;
             width: 360px;
-            height: 328px;
-            padding: 25px 8px;
+            padding: 25px 0 0 0;
             border-top-left-radius: 5px;
             border-top-right-radius: 5px;
-            margin-top: -107px;
+            margin-top: -40px;
+            margin-bottom: 10px;
 
             .conheca__main-section-input {
                 border: none;
-                width: 200px;
-                margin: 5px;
                 padding: 10px 15px;
-                width: 130px;
+                width: 80%;
                 border-radius: 2px;
+            }
+
+            .paragrafo {
+                min-height: 12px;
+            }
+
+            .conheca__main-section-invalido {
+                color: red;
+                font-size: 10px;
             }
 
             .conheca__main-section-input::placeholder {
@@ -68,39 +74,22 @@
 
             .textarea-form {
                 width: 80%;
-                margin-bottom: 30px;
             }
-        }
 
-        .conheca__main-btn {
-            background-color: $cor-primaria;
-            width: 360px;
-            height: 70px;
-            @include display-flex(space-between, center);
-
-            .conheca__main-texto {
-                color: $cor-secundaria;
+            .conheca__main-btn {
+                background-color: $cor-primaria;
+                border: none;
+                width: 100%;
+                height: 50px;
                 font-family: $font-titulo;
                 font-weight: bold;
                 font-size: 1.5rem;
-                text-transform: lowercase;
-                text-align: center;
-                margin: 0 auto;
-            }
-            
-            .conheca__main-link {
-                background-color: $cor-secundaria;
+                color: $cor-secundaria;
                 cursor: pointer;
-                height: 70px;
-                @include display-flex(center, center);
-                width: 90px;
-
-                .conheca__main-img {
-                    transform: rotate(180deg);
-                    width: 30px;
-                }
             }
         }
+
+
     }
 }
 
@@ -135,7 +124,7 @@
                 height: 400px;
     
                 .conheca__main-section-input {
-                    width: 100%;
+                    width: 85%;
                 }
             }
 
