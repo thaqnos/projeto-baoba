@@ -75,3 +75,29 @@
         }        
     }
 }
+
+@media (max-width: 425px) {
+    .conheca__geral {
+        .conheca__geral-div {
+            flex-direction: column;
+    
+            .conheca__div {
+                width: 100%;
+    
+                .conheca__div-imagem {
+                    margin-left: 0;
+                    width: 100%;
+                    margin: 0 auto;
+                    text-align: center;
+                    height: 150px;
+    
+                    .conheca__div-img {
+                        left: 0;
+                        width: 100%;
+                        height: 189px;
+                    }
+                }
+            }
+        }        
+    }
+}

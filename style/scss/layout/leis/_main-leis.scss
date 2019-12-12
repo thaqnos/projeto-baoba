@@ -95,7 +95,43 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
+    .leis-secao {
+        .leis-cards {
+            flex-direction: column;
+    
+            .leis-cards__div {
+                flex-direction: column;
+
+                .leis-cards__div-render {
+                    flex-direction: column;
+                    width: 100%;
+                    margin: 0 0 20px 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .leis-secao {
+        .leis-cards {
+            flex-direction: column;
+    
+            .leis-cards__div {
+                flex-direction: column;
+
+                .leis-cards__div-render {
+                    flex-direction: column;
+                    width: 100%;
+                    margin: 0 0 20px 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 320px){
     .leis-secao {
         .leis-cards {
             flex-direction: column;

@@ -72,7 +72,7 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) and (min-width: 320px) {
     .footer__div {
         .container {
             margin: 0;
